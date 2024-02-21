@@ -38,3 +38,6 @@ $('.carousel').carousel({
  });
 
  sported(); cultured();academicsed();rcled(); toHome(); referToFB();rToFB();
+
+
+

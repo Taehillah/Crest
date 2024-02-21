@@ -53,28 +53,41 @@
                                     <div class="p-4 p-md-5">
                                         <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
                                         <div class="h2 fw-bolder">Valentines Ball</div>
-                                        <p id="short-description">February 14, 2023 The entire school was adorned with red and white...</p>
-                                        <a class="stretched-link text-decoration-none read-more-link" href="#!">
-                                            Read more
+                                        <p id="short-description">The long anticipated valentines ball took place Friday the 16th of February. Girls came in shimmering dresses and boys looked smart in their formal shorts and ties that matched the elegance of the decor of the hall and amazing photobooth. Here are some pictures captured during that day</p>
+                                        <a class="stretched-link text-decoration-none read-more-link" id="blogVshow">
+                                            See Pictures
                                             <i class="bi bi-arrow-right"></i>
                                         </a>
-                                        <div id="expanded-content" class="d-none">
-                                            <!-- Additional content goes here -->
-                                            <p>Extended information about the eventhgvvhggfhfhf
-                                                 vbvghvjghvjhgvjghvjghvghjvghvhgjvvghjvgjvgvg
-                                                 ghvchgvgjjjvjhjhjh...</p>
-                                            <img src="images/ValentinesBall2.jpeg" alt="Extended Image 1">
-                                            <img src="images/ValentinesBall3.jpeg" alt="Extended Image 2">
+                                        <div id="expanded-content" class="d-none">    
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-xl-7">
-                                    <div class="bg-featured-blog" style="background-image: url(images/ValentinesBall1.jpeg)"></div>
-                                </div>
-                            </div>
-                        </div>
+                             <div class="col-lg-6 col-xl-7">
+                            <div class="bg-featured-blog" style="background-image: url(images/24VBall8.jpg)"></div>
+                         </div>
+                     </div>
+                     <div class="row gx-2 row-cols-1 row-cols-sm-2 row-cols-xl-3 d-none justify-content-center my-5" id="blogVshown">
+                        <img src="images/24VBall1.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
+                        <img src="images/24VBall2.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
+                        <img src="images/24VBall4.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
+                        <img src="images/24VBall5.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
+                        <img src="images/24VBall7.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
+                        <img src="images/24VBall6.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
+                       
                     </div>
                 </div>
+                </div>
+                    
+
+
+
+                
+
+
+
+
+                    
+               
             </section>
 
             <section class="py-1">
@@ -383,6 +396,7 @@
         <script src="path/to/jquery.min.js"></script>
         <script src="path/to/bootstrap.min.js"></script>
 
+
         <script>
             $(document).ready(function () {
                 $(".read-more-link").click(function (e) {
@@ -391,6 +405,18 @@
                     $("#expanded-content").toggleClass("d-none");
                 });
             });
+
+
+
         </script>
+<script>
+    $(document).ready(function () {
+        $("#blogVshow").click(function (e) {
+            e.preventDefault();
+            $("#blogVshown").toggleClass("d-none");
+        });
+    });
+</script>
+
     </body>
 </html>
