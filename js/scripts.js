@@ -31,14 +31,36 @@ document.getElementById("fbIcon").addEventListener("click", function referToFB()
    window.location.replace= "https://www.facebook.com/p/Suncrest-Sunspot-100057459520420/"
 });
 
+document.getElementById("VRs").addEventListener("click", function erform(){
+   alert("hi");
+});
+
 $('.carousel').carousel();
 
 $('.carousel').carousel({
    interval: 2000
  });
 
- sported(); cultured();academicsed();rcled(); toHome(); referToFB();rToFB();
 
 
+
+ sported(); cultured();academicsed();rcled(); toHome(); referToFB();rToFB();erform();
+
+
+
+function performer(){
+if(document.getElementById("blogVshow").style.display = "block"){
+alert("Display Block");
+}
+else{
+alert("coming");
+};
+};
+
+
+
+
+
+ 
 
 
