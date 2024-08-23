@@ -39,6 +39,15 @@
             margin-bottom: 15px;
         }
 
+        @media only screen and (max-width:480px){
+ 
+            #rep{
+  position: relative;
+  width:70%;
+  left: -69px;
+  }
+}
+
         .labels {
             font-weight: 600;
             color: #000000;
@@ -178,7 +187,7 @@
                                         <textarea type="text" placeholder="Enter your message here" id="Msg" name="Message" style="height: 10rem" required></textarea>
                                     </div>
 
-                                    <div class="form-group" data-netlify-recaptcha="true"></div>
+                                    <div class="form-group" id="rep" data-netlify-recaptcha="true"></div>
                             
                                     <button type="submit">Register</button>
                                 </form>
