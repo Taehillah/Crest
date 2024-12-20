@@ -12,7 +12,7 @@ document.getElementById("sportIcon").addEventListener("click", function sported(
 
 
 document.getElementById("cultureIcon").addEventListener("click", function cultured() {
-    window.location.href= "blog.html#HeritageDee";
+    window.location.href= "blog.html#HeritageDees";
  });
 
  document.getElementById("academicsIcon").addEventListener("click", function academicsed() {
