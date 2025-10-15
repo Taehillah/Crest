@@ -6,61 +6,65 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-document.getElementById("sportIcon").addEventListener("click", function sported() {
-   window.location.href= "Sport.html";
+document.addEventListener("DOMContentLoaded", () => {
+  const quickLinks = [
+    { id: "sportIcon", url: "Sport.html" },
+    { id: "cultureIcon", url: "blog.html#HeritageDees" },
+    { id: "academicsIcon", url: "Academics.html" },
+    { id: "rclIcon", url: "RCL.html" },
+  ];
+
+  quickLinks.forEach(({ id, url }) => {
+    const trigger = document.getElementById(id);
+    if (trigger) {
+      trigger.addEventListener("click", () => {
+        window.location.href = url;
+      });
+    }
+  });
+
+  const headerLogos = document.querySelectorAll("#headerLogo, .headerLogo");
+  headerLogos.forEach((logo) => {
+    logo.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  });
+
+  const fbIcon = document.getElementById("fbIcon");
+  if (fbIcon) {
+    fbIcon.addEventListener("click", () => {
+      window.location.href = "https://www.facebook.com/p/Suncrest-Sunspot-100057459520420/";
+    });
+  }
+
+  const vrButton = document.getElementById("VRs");
+  if (vrButton) {
+    vrButton.addEventListener("click", () => {
+      alert("hi");
+    });
+  }
+
+  if (window.jQuery && typeof window.jQuery.fn.carousel === "function") {
+    window.jQuery(".carousel").carousel({ interval: 2000 });
+  }
+
+  const backToTopButton = document.getElementById("btn-back-to-top");
+  if (backToTopButton) {
+    const toggleButton = () => {
+      if (window.scrollY > 240) {
+        backToTopButton.classList.add("show");
+      } else {
+        backToTopButton.classList.remove("show");
+      }
+    };
+
+    window.addEventListener("scroll", toggleButton, { passive: true });
+    toggleButton();
+
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 });
-
-
-document.getElementById("cultureIcon").addEventListener("click", function cultured() {
-    window.location.href= "blog.html#HeritageDees";
- });
-
- document.getElementById("academicsIcon").addEventListener("click", function academicsed() {
-    window.location.href= "Academics.html";
- });
  
- document.getElementById("rclIcon").addEventListener("click", function rcled() {
-    window.location.href= "RCL.html";
- });
-
- document.getElementByClass("headerLogo").addEventListener("click", function toHome() {
-    window.location.href= "index.html";
- });
-
-document.getElementById("fbIcon").addEventListener("click", function referToFB(){
-   window.location.replace= "https://www.facebook.com/p/Suncrest-Sunspot-100057459520420/"
-});
-
-document.getElementById("VRs").addEventListener("click", function erform(){
-   alert("hi");
-});
-
-$('.carousel').carousel();
-
-$('.carousel').carousel({
-   interval: 2000
- });
-
-
-
-
- sported(); cultured();academicsed();rcled(); toHome(); referToFB();rToFB();erform();
-
-
-
-function performer(){
-if(document.getElementById("blogVshow").style.display = "block"){
-alert("Display Block");
-}
-else{
-alert("coming");
-};
-};
-
-
-
-
-
- 
-
 

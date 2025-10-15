@@ -91,17 +91,19 @@
         #submitContact {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background-color: var(--crest-blue);
             color: white;
             border: none;
             border-radius: 30px;
             cursor: pointer;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 10px 25px rgba(15, 32, 64, 0.18);
         }
 
         #submitContact:hover {
-            background-color: #218838;
+            background-color: #1740b2;
+            transform: translateY(-2px);
         }
 
         .form-group {
@@ -112,37 +114,55 @@
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg  " id="blackText">
-                <!--navbar-dark bg-dark this is the class used for coloring the container below-->
-                <div class="container px-6 pt-4">
-                    <img id="headerLogo" class="headerLogo" src="images/logo.png" alt="">
-                    <a class="navbar-brand" href="index.html">Suncrest High School&nbsp;</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <nav class="navbar navbar-expand-lg navbar-dark site-navbar navbar-hero">
+                <div class="container px-4 px-lg-5 py-3">
+                    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                        <img class="img-fluid" id="headerLogo" src="images/logo.png" alt="Suncrest High School logo">
+                        <span>Suncrest High School</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="Info.html">Information</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <ul class="dropdown-menu dropdown-menu-end border-0 shadow" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
                                     <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                                 </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="Academics.html">Academics</a></li>
                             <li class="nav-item"><a class="nav-link" href="RCL.html">RCL</a></li>
                             <li class="nav-item"><a class="nav-link" href="Sport.html">Sport</a></li>
-							<li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
-                            <li class="nav-item"></li>
+                            <li class="nav-item ms-lg-3">
+                                <a class="btn btn-outline-light rounded-pill px-4 py-2" href="Contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
-              </div>
+                </div>
             </nav>
+            <header class="hero-section py-5">
+                <div class="container px-4 px-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center my-5">
+                                <p class="accent-heading mb-2">We're Here to Help</p>
+                                <h1 class="fw-bolder mb-3">Contact Suncrest High School</h1>
+                                <p class="lead fw-normal mb-4">Reach out to our administrative team for admissions, support, or general enquiries.</p>
+                                <a class="btn btn-light text-primary btn-lg px-4" href="tel:0169325664">Call Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <!-- Page Content-->
             <section class="py-5">
-                <div class="container px-5">
+                <div class="container px-4 px-lg-5">
                 <!-- Contact form-->
-                <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                <div class="section-highlight mb-5">
                     <div class="text-center mb-5">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                         <h1 class="fw-bolder">Get in touch</h1>
@@ -230,12 +250,16 @@
                         <div class="h5">Call us</div>
                         <p class="text-muted mb-0">(016)-932-5664.</p>
                     </div>
-                </div>
+                    </div>
                 </div>
             </section>
+
+            <button type="button" id="btn-back-to-top" class="btn btn-primary" aria-label="Back to top">
+                <i class="bi bi-arrow-up-short"></i>
+            </button>
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+        <footer class="footer py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; 2025 www.suncresthighschool.co.za</div></div>

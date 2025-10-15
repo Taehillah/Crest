@@ -17,38 +17,54 @@
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg  " id="blackText">
-                <!--navbar-dark bg-dark this is the class used for coloring the container below-->
-                <div class="container px-6 pt-4">
-                    <img id="headerLogo" class="headerLogo" src="images/logo.png" alt="">
-                    <a class="navbar-brand" href="index.html">Suncrest High School&nbsp;</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <nav class="navbar navbar-expand-lg navbar-dark site-navbar navbar-hero">
+                <div class="container px-4 px-lg-5 py-3">
+                    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                        <img class="img-fluid" id="headerLogo" src="images/logo.png" alt="Suncrest High School logo">
+                        <span>Suncrest High School</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="Info.html">Information</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <a class="nav-link dropdown-toggle active" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+                                <ul class="dropdown-menu dropdown-menu-end border-0 shadow" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
-                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item active" href="blog.html">Blog</a></li>
                                 </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="Academics.html">Academics</a></li>
                             <li class="nav-item"><a class="nav-link" href="RCL.html">RCL</a></li>
                             <li class="nav-item"><a class="nav-link" href="Sport.html">Sport</a></li>
-							<li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
-                            <li class="nav-item"></li>
+                            <li class="nav-item ms-lg-3">
+                                <a class="btn btn-outline-light rounded-pill px-4 py-2" href="Contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
-              </div>
+                </div>
             </nav>
+            <header class="hero-section py-5">
+                <div class="container px-4 px-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center my-5">
+                            <p class="accent-heading mb-2">Suncrest Stories</p>
+                            <h1 class="fw-bolder mb-3">Highlights from our vibrant school community</h1>
+                            <p class="lead fw-normal mb-4">Catch up on recent events, learner achievements, and moments that make our school special.</p>
+                            <a class="btn btn-light text-primary btn-lg px-4" href="#Contest">See What's New</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
 
 
 
      <section class="py-5" id="Contest">
-         <div class="container px-5 py-4">
+         <div class="container px-4 px-lg-5 py-4">
             <h4 class="fw-bolder">Grade 8's Induction | 2025</h4>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -458,9 +474,13 @@
             </section>
             -->
            
+        <button type="button" id="btn-back-to-top" class="btn btn-primary" aria-label="Back to top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+           
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+        <footer class="footer py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; 2025 www.suncresthighschool.co.za</div></div>

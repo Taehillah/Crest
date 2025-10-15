@@ -17,56 +17,65 @@
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg  " id="blackText">
-                <!--navbar-dark bg-dark this is the class used for coloring the container below-->
-                <div class="container px-6 pt-4">
-                    <img class="img-fluid" id="headerLogo" src="images/logo.png" alt="">
-                    <a class="navbar-brand" href="index.html">Suncrest High School&nbsp;</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <nav class="navbar navbar-expand-lg navbar-dark site-navbar navbar-hero">
+                <div class="container px-4 px-lg-5 py-3">
+                    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                        <img class="img-fluid" id="headerLogo" src="images/logo.png" alt="Suncrest High School logo">
+                        <span>Suncrest High School</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Info.html">Information</a></li>
+                        <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="Info.html">Information</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <ul class="dropdown-menu dropdown-menu-end border-0 shadow" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
                                     <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                                 </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="Academics.html">Academics</a></li>
                             <li class="nav-item"><a class="nav-link" href="RCL.html">RCL</a></li>
                             <li class="nav-item"><a class="nav-link" href="Sport.html">Sport</a></li>
-							<li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
-                            <li class="nav-item"></li>
+                            <li class="nav-item ms-lg-3">
+                                <a class="btn btn-outline-light rounded-pill px-4 py-2" href="Contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
-              </div>
+                </div>
             </nav>
             <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5">
+            <header class="hero-section py-5">
+                <div class="container px-4 px-lg-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-xxl-6">
                             <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3">All Information you need regarding 2025 academic year.</h1>
-                                <h3 class="lead fw-normal text-muted mb-4"><u>RE-OPENING IN 2025</u></h3>
-                                <p class="lead fw-normal text-muted mb-4">School re-opened officially on Wednesday the 15th of January 2025.
-                                </p>
-                                <a class="btn btn-primary btn-lg" href="Contact.html">Ask our Admin</a>
+                                <p class="accent-heading mb-2">2025 Admissions Guide</p>
+                                <span class="badge rounded-pill bg-warning text-dark mb-3">Re-opening on 15 January 2025</span>
+                                <h1 class="fw-bolder mb-3">Everything you need for the year ahead</h1>
+                                <p class="lead fw-normal mb-4">School re-opened officially on Wednesday the 15th of January 2025. Explore key dates, fees, and requirements to stay ready.</p>
+                                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                                    <a class="btn btn-light text-primary btn-lg px-4" href="Contact.html">Ask our Admin</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="#scroll-target">View School Fees</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
             <!-- School Fees-->
-            <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-6 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-5"><img class="img-fluid rounded mb-4 mb-lg-0" src="images/SchoolFees.png" alt="..." /></div>
-                        <div class="col-lg-7">
-                            <h2 class="fw-bolder">School Fees (2025)</h2>
-                            <p class="lead fw-normal mb-0">Annual school fees for 2025 are as follows:<br>
+            <section class="py-5 section-muted" id="scroll-target">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="section-highlight">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-lg-5"><img class="img-fluid rounded-4 mb-4 mb-lg-0 shadow-lg" src="images/SchoolFees.png" alt="2025 school fees breakdown" /></div>
+                            <div class="col-lg-7">
+                                <p class="accent-heading mb-2">Investing In Excellence</p>
+                                <h2 class="fw-bolder">School Fees (2025)</h2>
+                                <p class="lead fw-normal mb-0">Annual school fees for 2025 are as follows:<br>
                                 1st Child: R9 950.00 (R950.00 resource fee, R900.00 x 10 months)<br>
                                 2nd Child: R9 450.00 (R950.00 resource fee, R850.00 x 10 months)<br> 
                                 3rd Child: R8 950.00 (R950.00 resource fee, R800.00 x 10 months)<br>
@@ -76,45 +85,48 @@
                                 Please be reminded that all accounts that are not settled in full by 30th November 2025,
                                 without justification, will be declared as "bad debt" and legal proceedings may be initiated
                                 to recover debt.
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         <!-- Cashless Notice-->
-        <section class="py-3">
-            <div class="container px-5 my-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-5 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/cashless.png" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <h2 class="fw-bolder">Cash Free Zone</h2>
-                        <p class="lead fw-normal text-muted mb-0">As from 2024, Suncrest is a cash free zone which means school fees will only be paid through EFT,
-                            Bank deposit or Debit order.
-
-                            Very Important upon payment:
-                            <b>School Reference: Learner's Name, Surname and Grade!</b>
-                        </p>
-                        <br>
-                        <h5 class="fw-bolder">Banking Details</h5>
-                        <p class="lead fw-normal text-muted mb-0">
-                            <b>Name: Suncrest High School</b> <br>
-                            <b>Bank: ABSA</b> <br>
-                            <b>Account Number: 530 810 356</b> <br>
-                            <b>Account Type: Cheque/Current Account</b> <br>
-                            <b>Branch: Vanderbijlpark</b> <br>
-
-                        </p>
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="section-highlight">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-5 order-first order-lg-last"><img class="img-fluid rounded-4 mb-5 mb-lg-0 shadow" src="images/cashless.png" alt="Cashless payments illustration" /></div>
+                        <div class="col-lg-7">
+                            <p class="accent-heading mb-2">Smart Payments</p>
+                            <h2 class="fw-bolder">Cash Free Zone</h2>
+                            <p class="lead fw-normal text-muted mb-4">As from 2024, Suncrest is a cash free zone which means school fees will only be paid through EFT, bank deposit or debit order. Remember to use the learner's name, surname, and grade as the payment reference.</p>
+                            <h5 class="fw-bolder mb-3">Banking Details</h5>
+                            <p class="lead fw-normal text-muted mb-0">
+                                <b>Name:</b> Suncrest High School<br>
+                                <b>Bank:</b> ABSA<br>
+                                <b>Account Number:</b> 530 810 356<br>
+                                <b>Account Type:</b> Cheque/Current Account<br>
+                                <b>Branch:</b> Vanderbijlpark
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
-
-        <div class="accordion" id="accordionExample">
+        <section class="py-5 section-muted">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h3 class="fw-bolder">Grade 8 Resource Fee</h3>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <table>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -606,11 +618,15 @@
             </div>
         </div>
     </div>
-</section>
+        </section>
  
+        <button type="button" id="btn-back-to-top" class="btn btn-primary" aria-label="Back to top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+        <footer class="footer py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; 2025 www.suncresthighschool.co.za</div></div>

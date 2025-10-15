@@ -19,6 +19,9 @@
   <link
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet">
 
   <!-- Custom styles that mess up my pages
 
@@ -34,74 +37,80 @@
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg  " id="blackText">
-                <!--navbar-dark bg-dark this is the class used for coloring the container below-->
-                <div class="container px-6 pt-4">
-                    <img class="img-fluid" id="headerLogo" src="images/logo.png" alt="">
-                    <a style="font-size: large auto;" class="navbar-brand" href="index.html">Suncrest High School</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <nav class="navbar navbar-expand-lg navbar-dark site-navbar navbar-hero">
+                <div class="container px-4 px-lg-5 py-3">
+                    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                        <img class="img-fluid" id="headerLogo" src="images/logo.png" alt="Suncrest High School logo">
+                        <span>Suncrest High School</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="Info.html">Information</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <ul class="dropdown-menu dropdown-menu-end border-0 shadow" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
                                     <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                                 </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="Academics.html">Academics</a></li>
                             <li class="nav-item"><a class="nav-link" href="RCL.html">RCL</a></li>
                             <li class="nav-item"><a class="nav-link" href="Sport.html">Sport</a></li>
-							<li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
-                            <li class="nav-item"></li>
+                            <li class="nav-item ms-lg-3">
+                                <a class="btn btn-outline-light rounded-pill px-4 py-2" href="Contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
-              </div>
+                </div>
             </nav>
             <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 ">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h2 class="display-5 fw-bolder mb-2">Suncrest High School &nbsp;</h2>
-                                <h3 class=" fw-bolder mb-2">Education is a passport to the future, for tomorrow belongs to those who prepare for it today.</h3>
-                                <br>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-pre btn-lg px-4 me-sm-4" href="Academics.html#academicResults"> Grade 12 Results</a>
-                                    <a class="btn btn-pre btn-lg px-4" href="Info.html">Learn More</a>
-                                </div>
-                            </div>
+            <header class="hero-section hero-immersive">
+                <div class="container px-4 px-lg-5 hero-layout">
+                    <div class="hero-copy text-start">
+                        <div class="hero-pretitle accent-heading">Inspiring Future Leaders</div>
+                        <h1 class="hero-title text-uppercase">Suncrest High School</h1>
+                        <p class="hero-subtitle">Education is a passport to the future, for tomorrow belongs to those who prepare for it today.</p>
+                        
+                        <div class="d-grid gap-3 d-sm-flex">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-2" href="Academics.html#academicResults">Grade 12 Results</a>
+                            <a class="btn btn-outline-primary btn-lg px-4" href="Info.html">Learn More</a>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="images/RCL4.jpeg" alt="..." /></div>
+                    </div>
+                    <div class="hero-photo">
+                        <img src="images/RCL4.jpeg" class="img-fluid" alt="Suncrest learners celebrating achievements">
                     </div>
                 </div>
             </header>
 
-             <!-- Mission and Vision Statement-->
-             <div class="py-5 bg-light">
-                <div class="container px-5 my-5">
+            <!-- Mission and Vision Statement-->
+            <section class="pt-5 pb-5 section-muted">
+                <div class="container px-4 px-lg-5 pt-5 pb-5">
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-7">
-                            <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic fw-bold">Mission and Vision Statement</div>
-                                <div class="fs-4 mb-4 fst-italic">"The mission of this school is to foster academic, social and extra-curricular growth through the development of cognitive thinking skills.
-                                    We provide educational opportunities for all cultural groups in our community and serve its diverse needs by promoting a culture of thinking and learning.
-                                    We undertake to:
-                                    ﻿﻿promote cognitive thinking
-                                    ﻿﻿teach skills for problem solving
-                                    ﻿﻿develop intrinsic motivation and reflective thinking
-                                    ﻿﻿provide structures to develop the total person
-                                    ﻿﻿nurture a spirit of tolerance and honesty
-                                    ﻿﻿respond to the needs of the market place and the broader community
-                                    ﻿﻿uphold a set of values and norms based on respect for the dignity of all life."</div>
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="section-highlight text-center">
+                                <p class="accent-heading mb-3">Mission &amp; Vision</p>
+                                <h2 class="fw-bolder mb-4">Building confident, compassionate scholars</h2>
+                                <p class="lead text-muted mb-4">
+                                    The mission of our school is to foster academic, social, and extra-curricular growth through the development of cognitive thinking skills. We provide educational opportunities for all cultural groups in our community and serve its diverse needs by promoting a culture of thinking and learning. We undertake to:
+                                </p>
+                                <ul class="list-unstyled d-inline-block text-start text-muted fw-semibold mb-4">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Promote cognitive thinking</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Teach skills for problem solving</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Develop intrinsic motivation and reflective thinking</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Provide structures to develop the total person</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Nurture a spirit of tolerance and honesty</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Respond to the needs of the marketplace and broader community</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Uphold values and norms based on respect for the dignity of all life</li>
+                                </ul>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3 smallImage" src="images/Coorporate1.png" alt="..." />
-                                    <div class="fw-bold">
+                                    <img class="rounded-circle me-3 smallImage" src="images/Coorporate1.png" alt="Portrait of Mrs Vermeulen" />
+                                    <div class="fw-bold text-muted">
                                         Mrs Vermeulen
-                                        <span class="fw-bold text-primary mx-1">-</span>
+                                        <span class="fw-bold text-primary mx-1">/</span>
                                         Principal
                                     </div>
                                 </div>
@@ -109,94 +118,100 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-<!--School Activities-->
-
-<section class="py-4">
-    <div class="container px-5 my-5 ">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-8 col-xl-12">
-<div class="text-center">
-    <h2 class="fw-bolder">School Activities</h2>
-</div>
-<div class="text-center py-5">
-<div id="sportIcon" class="cards">
-    <img src="images/SportsLogo.jpg" alt="Card Back" style="width: 150px;height: 150px; border-radius: 100px;">
-    <img src="images/SportsLogo1.jpg" class="img-top" alt="Card Front">
-</div>
-<div id="cultureIcon" class="cards">
-    <img src="images/CultureLogo.jpg" alt="Card Back" style="width: 150px;height: 150px; border-radius: 100px;">
-    <img src="images/CultureLogo1.jpg" class="img-top" alt="Card Front">
-</div>
-<div id="academicsIcon" class="cards">
-    <img src="images/AcademicsLogo.jpg" alt="Card Back" style="width: 150px;height: 150px; border-radius: 100px;">
-    <img src="images/AcademicsLogo1.jpg" class="img-top" alt="Card Front">
-</div>
-<div id="rclIcon" class="cards">
-    <img src="images/RCLLogo.jpg" alt="Card Back" style="width: 150px;height: 150px; border-radius: 100px;">
-    <img src="images/RCLLogo1.jpg" class="img-top" alt="Card Front">
-</div>
-</div>
-</div>
-</div>
-    </section>
-
-    <!-- School Facilities-->
-
-    <div class="accordion align-items-center" id="accordionExample">
-        <div class="accordion-item align-items-center text-center">
-          <h5 class="accordion-header align-items-center text-center">
-            <div class="my-3 " type="button" data-bs-toggle="collapse" data-bs-target="#collapsePremises" aria-expanded="false" aria-controls="collapsePremises">
-              <h4 class="fst-italic">Our Premises</h4>
-            </div>
-          </h5>
-    <div id="collapsePremises" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-            <h4 class="fst-italic"></h4>
-            <div class="row gx-2 row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center my-3" id="">
-                <img src="images/acaFac1.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                <img src="images/acaFac2.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                <img src="images/acaFac3.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                <img src="images/acaFac4.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-              
-            </div>
-        </div>
-    </div>
-
-
-    <div class="accordion align-items-center" id="accord">
-        <div class="accordion-item align-items-center text-center">
-          <h5 class="accordion-header align-items-center text-center">
-            <div class="my-3 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFacilities" aria-expanded="false" aria-controls="collapseFacilities">
-              <h4 class="fst-italic">School Facilities</h4>
-            </div>
-          </h5>
-          <div id="collapseFacilities" class="accordion-collapse collapse" data-bs-parent="#accordion">
-            <div class="accordion-body">
-                <h5 class="fst-italic"><i><u>Consumer Studies</u></i></h5>
-                <div class="row gx-2 row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center my-3" id="">
-                    <img src="images/acaHome1.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                    <img src="images/acaHome2.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                    <img src="images/acaHome3.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                    <img src="images/acaHome4.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                    <img src="images/acaHome5.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
-                    <img src="images/acaHome6.jpg" class=" mx-2 my-2 img-fluid rounded " alt="...">
+            <!-- School Activities-->
+            <section class="py-5">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-9">
+                            <div class="text-center mb-5">
+                                <p class="accent-heading mb-2">School Activities</p>
+                                <h2 class="fw-bolder">Opportunities beyond the classroom</h2>
+                                <p class="text-muted mb-0">Discover the cultural, academic, and sporting programmes that empower our learners to thrive.</p>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-center gap-4 text-center">
+                                <div id="sportIcon" class="cards icon-circle">
+                                    <img src="images/SportsLogo.jpg" alt="Sport programme" style="width: 150px;height: 150px; border-radius: 100px;">
+                                    <img src="images/SportsLogo1.jpg" class="img-top" alt="Sport highlights">
+                                </div>
+                                <div id="cultureIcon" class="cards icon-circle">
+                                    <img src="images/CultureLogo.jpg" alt="Culture programme" style="width: 150px;height: 150px; border-radius: 100px;">
+                                    <img src="images/CultureLogo1.jpg" class="img-top" alt="Culture highlights">
+                                </div>
+                                <div id="academicsIcon" class="cards icon-circle">
+                                    <img src="images/AcademicsLogo.jpg" alt="Academic programme" style="width: 150px;height: 150px; border-radius: 100px;">
+                                    <img src="images/AcademicsLogo1.jpg" class="img-top" alt="Academic highlights">
+                                </div>
+                                <div id="rclIcon" class="cards icon-circle">
+                                    <img src="images/RCLLogo.jpg" alt="Representative council" style="width: 150px;height: 150px; border-radius: 100px;">
+                                    <img src="images/RCLLogo1.jpg" class="img-top" alt="RCL highlights">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <h5 class="fst-italic"><i><u>Laboratory</u></i></h5>
-                <div class="row gx-1 row-cols-1 row-cols-sm-1 row-cols-xl-3 justify-content-center my-2" id="">
-                    <img src="images/acaLab1.jpg" class=" mb-xl-0 my-1   img-fluid rounded " alt="...">
-                    <img src="images/acaLab2.jpg" class="  mb-xl-0 my-1  img-fluid rounded " alt="...">
-                    <img src="images/acaLab3.jpg" class="  mb-xl-0 my-1  img-fluid rounded " alt="...">
+            <!-- School Facilities-->
+            <section class="py-5 section-muted">
+                <div class="container px-4 px-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11">
+                            <div class="text-center mb-4">
+                                <p class="accent-heading mb-2">Campus Highlights</p>
+                                <h2 class="fw-bolder mb-3">School Facilities</h2>
+                                <p class="text-muted mb-0">Take a closer look at the spaces that support our learners every day.</p>
+                            </div>
+                            <div class="accordion" id="campusAccordion">
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="headingPremises">
+                                        <button class="accordion-button collapsed justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePremises" aria-expanded="false" aria-controls="collapsePremises">
+                                            Our Premises
+                                        </button>
+                                    </h5>
+                                    <div id="collapsePremises" class="accordion-collapse collapse" aria-labelledby="headingPremises" data-bs-parent="#campusAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row gx-2 row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center my-3">
+                                                <img src="images/acaFac1.jpg" class="mx-2 my-2 img-fluid rounded" alt="Learners enjoying the courtyard">
+                                                <img src="images/acaFac2.jpg" class="mx-2 my-2 img-fluid rounded" alt="A welcoming school entrance">
+                                                <img src="images/acaFac3.jpg" class="mx-2 my-2 img-fluid rounded" alt="Suncrest school buildings">
+                                                <img src="images/acaFac4.jpg" class="mx-2 my-2 img-fluid rounded" alt="Our campus grounds">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="headingFacilities">
+                                        <button class="accordion-button collapsed justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFacilities" aria-expanded="false" aria-controls="collapseFacilities">
+                                            School Facilities
+                                        </button>
+                                    </h5>
+                                    <div id="collapseFacilities" class="accordion-collapse collapse" aria-labelledby="headingFacilities" data-bs-parent="#campusAccordion">
+                                        <div class="accordion-body">
+                                            <h5 class="fw-semibold text-primary mb-3"><i><u>Consumer Studies</u></i></h5>
+                                            <div class="row gx-2 row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center my-3">
+                                                <img src="images/acaHome1.jpg" class="mx-2 my-2 img-fluid rounded" alt="Consumer studies practical area">
+                                                <img src="images/acaHome2.jpg" class="mx-2 my-2 img-fluid rounded" alt="Learners in consumer studies">
+                                                <img src="images/acaHome3.jpg" class="mx-2 my-2 img-fluid rounded" alt="Consumer studies kitchen">
+                                                <img src="images/acaHome4.jpg" class="mx-2 my-2 img-fluid rounded" alt="Baking station">
+                                                <img src="images/acaHome5.jpg" class="mx-2 my-2 img-fluid rounded" alt="Learners preparing dishes">
+                                                <img src="images/acaHome6.jpg" class="mx-2 my-2 img-fluid rounded" alt="Consumer studies presentation">
+                                            </div>
+                                            <h5 class="fw-semibold text-primary mb-3"><i><u>Laboratory</u></i></h5>
+                                            <div class="row gx-1 row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center my-2">
+                                                <img src="images/acaLab1.jpg" class="mb-xl-0 my-1 img-fluid rounded" alt="Science laboratory workstations">
+                                                <img src="images/acaLab2.jpg" class="mb-xl-0 my-1 img-fluid rounded" alt="Learners conducting experiments">
+                                                <img src="images/acaLab3.jpg" class="mb-xl-0 my-1 img-fluid rounded" alt="Laboratory safety equipment">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-                
+            </section>
 
  <!-- IMPORTANT NOTICE
  <div class="row gx-5 align-items-center justify-content-center">
@@ -213,39 +228,39 @@
 
     -->
 
-
-
-
- <!-- Congradulations-->
- <section class="py-5 bg-light" id="scroll-target">
-    <div class="container px-6 my-5">
-        <div class="row gx-5 align-items-center">
-            <div class=".flex-fill"><img class="img-fluid" src="images/finCongra.jpg" alt="..." /></div>
-            
-        </div>
-    </div>
-</section>
-
-<section class="py-5  " id="meetYourTeacher">
-    <div class="container px-5 my-5">
-        <div class="text-center">
-            <h2 class="fw-bolder"> Suncrest High 2023 Top Learner</h2>
-            <p class="lead fw-normal text-muted mb-5">This Learner Passed with 6 Distictions</p>
-        </div>
-        <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center">
-            <div class="col mb-5 mb-5 mb-xl-0">
-                <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4  shadow  border border-warning" src="images/Faith2.jpg" alt="..." />
-                    <h5 class="fw-bolder">Faith</h5>
-                    <div class="fst-italic text-muted">English HL - Level 6, Afrikaans FAL - Level 7, Mathemetics - Level 7
-                        Life Orientation - Level 7, Accounting - Level 7, Life Science - Level 7
-                        Physical Science - Level 6</div>
+            <!-- Congratulations-->
+            <section class="py-5 section-muted" id="scroll-target">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="section-highlight text-center">
+                        <p class="accent-heading mb-2">Celebrating Success</p>
+                        <h2 class="fw-bolder mb-4">Congratulations to our matric class</h2>
+                        <img class="img-fluid rounded-4 shadow-lg" src="images/finCongra.jpg" alt="Suncrest matric celebration" />
+                    </div>
                 </div>
-            </div>
-        </div>
-</div>
-</div>
-</section>
+            </section>
+
+            <section class="py-5" id="meetYourTeacher">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="section-highlight text-center">
+                        <p class="accent-heading mb-2">Top Achiever</p>
+                        <h2 class="fw-bolder">Suncrest High 2023 Top Learner</h2>
+                        <p class="lead fw-normal text-muted mb-5">This learner achieved six distinctions and continues to inspire our community.</p>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="text-center">
+                                    <img class="img-fluid rounded-circle mb-4 px-4 shadow border border-warning" src="images/Faith2.jpg" alt="Faith, Suncrest High top learner" />
+                                    <h5 class="fw-bolder">Faith</h5>
+                                    <div class="fst-italic text-muted">English HL - Level 6, Afrikaans FAL - Level 7, Mathematics - Level 7, Life Orientation - Level 7, Accounting - Level 7, Life Science - Level 7, Physical Science - Level 6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <button type="button" id="btn-back-to-top" class="btn btn-primary" aria-label="Back to top">
+                <i class="bi bi-arrow-up-short"></i>
+            </button>
 
 
             
@@ -362,7 +377,7 @@
 
 
         
-        <footer class="bg-dark py-4 mt-auto">
+        <footer class="footer py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; 2025 www.suncresthighschool.co.za</div></div>
