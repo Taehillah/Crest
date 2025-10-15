@@ -11295,6 +11295,25 @@ body {
   }
 }
 
+@media (max-width: 575.98px) {
+  .navbar.site-navbar .container {
+    padding-inline: 1rem;
+  }
+  .navbar.site-navbar .navbar-brand {
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+  }
+  .navbar.site-navbar #headerLogo {
+    height: 34px;
+  }
+  .navbar.site-navbar .navbar-toggler {
+    padding: 0.3rem 0.55rem;
+    font-size: 1.1rem;
+    margin-left: auto;
+  }
+}
+
 
 
 @media (max-width: 991.98px) {
